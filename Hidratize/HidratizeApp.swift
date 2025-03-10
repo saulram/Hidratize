@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct HidratizeApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    let notificationManager = NotificationManager.shared
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -22,11 +25,32 @@ struct HidratizeApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
+    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() .onAppear {
+                // Solicitar permisos y programar notificaciones
+                notificationManager.requestNotificationPermissions { granted in
+                    if granted {
+                        notificationManager.scheduleHydrationReminders()
+                    } else {
+                        print("El usuario denegó los permisos de notificación.")
+                    }
+                }
+            }
         }
+        
+        .environment(\.managedObjectContext, persistenceController.container.viewContext)
         .modelContainer(sharedModelContainer)
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        // Configurar cualquier cosa adicional si es necesario
+        return true
     }
 }

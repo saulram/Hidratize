@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		60A2306B2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60A230692CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld */; };
+		60A2306C2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60A230692CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld */; };
+		60A2306D2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60A230692CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld */; };
+		60A230C82CDAADD100A6E84F /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230C72CDAADD100A6E84F /* Auth */; };
+		60A230CA2CDAADD100A6E84F /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230C92CDAADD100A6E84F /* Functions */; };
+		60A230CC2CDAADD100A6E84F /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230CB2CDAADD100A6E84F /* PostgREST */; };
+		60A230CE2CDAADD100A6E84F /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230CD2CDAADD100A6E84F /* Realtime */; };
+		60A230D02CDAADD100A6E84F /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230CF2CDAADD100A6E84F /* Storage */; };
+		60A230D32CDAAEE800A6E84F /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 60A230D22CDAAEE800A6E84F /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		600F64C82CD8539F00B99002 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,15 +35,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		60A231562CDBF3E000A6E84F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		600F64B42CD8539E00B99002 /* Hidratize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hidratize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		600F64C72CD8539F00B99002 /* HidratizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HidratizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		600F64D12CD8539F00B99002 /* HidratizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HidratizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A2306A2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HidratizeDataModel.xcdatamodel; sourceTree = "<group>"; };
+		60A231452CDBF3DE00A6E84F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		60A231472CDBF3DE00A6E84F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		60A2315C2CDBFAAF00A6E84F /* HidratizeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HidratizeWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		60A230362CD8684600A6E84F /* Exceptions for "Hidratize" folder in "Hidratize" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 600F64B32CD8539E00B99002 /* Hidratize */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		600F64B62CD8539E00B99002 /* Hidratize */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				60A230362CD8684600A6E84F /* Exceptions for "Hidratize" folder in "Hidratize" target */,
+			);
 			path = Hidratize;
 			sourceTree = "<group>";
 		};
@@ -52,6 +94,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A230CC2CDAADD100A6E84F /* PostgREST in Frameworks */,
+				60A230CA2CDAADD100A6E84F /* Functions in Frameworks */,
+				60A230D32CDAAEE800A6E84F /* Supabase in Frameworks */,
+				60A230C82CDAADD100A6E84F /* Auth in Frameworks */,
+				60A230D02CDAADD100A6E84F /* Storage in Frameworks */,
+				60A230CE2CDAADD100A6E84F /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +123,12 @@
 		600F64AB2CD8539E00B99002 = {
 			isa = PBXGroup;
 			children = (
+				60A2315C2CDBFAAF00A6E84F /* HidratizeWidgetExtension.entitlements */,
+				60A230692CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld */,
 				600F64B62CD8539E00B99002 /* Hidratize */,
 				600F64CA2CD8539F00B99002 /* HidratizeTests */,
 				600F64D42CD8539F00B99002 /* HidratizeUITests */,
+				60A230D12CDAAEE800A6E84F /* Frameworks */,
 				600F64B52CD8539E00B99002 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +143,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		60A230D12CDAAEE800A6E84F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A231452CDBF3DE00A6E84F /* WidgetKit.framework */,
+				60A231472CDBF3DE00A6E84F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +162,7 @@
 				600F64B02CD8539E00B99002 /* Sources */,
 				600F64B12CD8539E00B99002 /* Frameworks */,
 				600F64B22CD8539E00B99002 /* Resources */,
+				60A231562CDBF3E000A6E84F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -112,6 +173,12 @@
 			);
 			name = Hidratize;
 			packageProductDependencies = (
+				60A230C72CDAADD100A6E84F /* Auth */,
+				60A230C92CDAADD100A6E84F /* Functions */,
+				60A230CB2CDAADD100A6E84F /* PostgREST */,
+				60A230CD2CDAADD100A6E84F /* Realtime */,
+				60A230CF2CDAADD100A6E84F /* Storage */,
+				60A230D22CDAAEE800A6E84F /* Supabase */,
 			);
 			productName = Hidratize;
 			productReference = 600F64B42CD8539E00B99002 /* Hidratize.app */;
@@ -195,6 +262,9 @@
 			);
 			mainGroup = 600F64AB2CD8539E00B99002;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 600F64B52CD8539E00B99002 /* Products */;
 			projectDirPath = "";
@@ -236,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A2306B2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A2306C2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A2306D2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -376,6 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -388,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hidratize/Hidratize.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Hidratize/HidratizeDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hidratize/Preview Content\"";
@@ -396,6 +471,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hidratize/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "La app necesita acceso a tus datos de hidratación para ayudarte a realizar un seguimiento de tu consumo diario de agua.\n";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "La app necesita acceso a tus datos de hidratación para ayudarte a realizar un seguimiento de tu consumo diario de agua.\n";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "La app necesita acceder a tu ubicación para ajustar tus necesidades de hidratación en función del clima.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -411,6 +490,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.disolutionsmx.Hidratize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -428,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Hidratize/Hidratize.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hidratize/Preview Content\"";
@@ -435,6 +516,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hidratize/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "La app necesita acceso a tus datos de hidratación para ayudarte a realizar un seguimiento de tu consumo diario de agua.\n";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "La app necesita acceso a tus datos de hidratación para ayudarte a realizar un seguimiento de tu consumo diario de agua.\n";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "La app necesita acceder a tu ubicación para ajustar tus necesidades de hidratación en función del clima.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -450,8 +536,10 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.disolutionsmx.Hidratize;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.disolutionsmx.Hidratize-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -591,6 +679,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		60A230C72CDAADD100A6E84F /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		60A230C92CDAADD100A6E84F /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		60A230CB2CDAADD100A6E84F /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		60A230CD2CDAADD100A6E84F /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		60A230CF2CDAADD100A6E84F /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		60A230D22CDAAEE800A6E84F /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60A230C22CDAAD7D00A6E84F /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		60A230692CD9552D00A6E84F /* HidratizeDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60A2306A2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodel */,
+			);
+			currentVersion = 60A2306A2CD9552D00A6E84F /* HidratizeDataModel.xcdatamodel */;
+			path = HidratizeDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 600F64AC2CD8539E00B99002 /* Project object */;
 }
